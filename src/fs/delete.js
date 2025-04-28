@@ -3,10 +3,10 @@ import { resolve } from 'node:path';
 const __dirname = import.meta.dirname;
 
 const remove = async () => {
-    const fileToRemove = resolve(__dirname, 'files', 'fileToRemove.txt');
+    const fileToRemovePath = resolve(__dirname, 'files', 'fileToRemove.txt');
 
     try {
-        await unlink(fileToRemove);
+        await unlink(fileToRemovePath);
     } catch (e) {
         if (e.code === 'ENOENT') {
             throw Error('FS operation failed');
