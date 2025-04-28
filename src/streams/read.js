@@ -1,5 +1,5 @@
-import { createReadStream } from 'fs';
-import { resolve } from 'path';
+import { createReadStream } from 'node:fs';
+import { resolve } from 'node:path';
 const __dirname = import.meta.dirname;
 
 const read = async () => {

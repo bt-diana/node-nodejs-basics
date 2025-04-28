@@ -1,6 +1,6 @@
-import { createWriteStream } from 'fs';
-import { resolve } from 'path';
-import { createInterface } from 'readline';
+import { createWriteStream } from 'node:fs';
+import { resolve } from 'node:path';
+import { createInterface } from 'node:readline';
 
 const __dirname = import.meta.dirname;
 

@@ -1,6 +1,6 @@
-import * as path from 'path';
-import { release, version } from 'os';
-import { createServer as createServerHttp } from 'http';
+import * as path from 'node:path';
+import { release, version } from 'node:os';
+import { createServer as createServerHttp } from 'node:http';
 import './files/c.cjs';
 
 const __dirname = import.meta.dirname;
